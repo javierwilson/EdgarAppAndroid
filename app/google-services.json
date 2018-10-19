@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "53119510335",
+    "firebase_url": "https://edgar-app-d681c.firebaseio.com",
+    "project_id": "edgar-app-d681c",
+    "storage_bucket": "edgar-app-d681c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53119510335:android:08d4e7253601257f",
+        "android_client_info": {
+          "package_name": "org.lwr.edgarapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53119510335-tgfnnllo93opg2j30lvrauiop3hfvkpl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJAexIdhlW_KnOmWMMgUooiJCyE7pY1Bs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

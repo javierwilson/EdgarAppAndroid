@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginTop="5dp"
+    android:id="@+id/cont"
+    android:background="@drawable/calendario_uno"
+    android:paddingBottom="10dp">
+
+
+    <RelativeLayout
+        android:id="@+id/encabezado"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bcalendario_uno">
+
+        <org.lwr.edgarapp.view.TextViewRegular
+            android:id="@+id/txFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="29 ene. - 28 mar."
+            android:textColor="@android:color/white" />
+
+
+        <org.lwr.edgarapp.view.TextViewRegular
+            android:id="@+id/txCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="Productiva"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <org.lwr.edgarapp.view.TextViewBold
+        android:id="@+id/txTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/encabezado"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Protección para el desarrollo y llenando de frutos jóvenes"
+        android:textColor="#6f4b1f"
+        android:textSize="17sp" />
+
+
+    <org.lwr.edgarapp.view.TextViewRegular
+        android:id="@+id/txDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txTitulo"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Aplicar fungicidas la zona productiva y productores foliares con contenido de potasio para ganar tamaño de fruto y peso de semilla."
+        android:textColor="#615447"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/rlCiclo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txDescripcion"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+
+        <org.lwr.edgarapp.view.TextViewRegular
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:text="Ciclo lunar"
+            android:textColor="#615447" />
+
+        <ImageView
+            android:id="@+id/moon_uno"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/moon_uno" />
+
+
+        <ImageView
+            android:id="@+id/moon_cuatro"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/moon_cuatro" />
+
+        <ImageView
+            android:id="@+id/moon_tres"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/moon_tres" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

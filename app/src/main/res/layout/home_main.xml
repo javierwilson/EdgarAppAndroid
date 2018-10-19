@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/my_awesome_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar_color"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/MyActionBarTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/edgar"
+            android:layout_width="100dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/edgar" />
+
+        <org.lwr.edgarapp.view.TextViewRegular
+            android:id="@+id/txName"
+            android:layout_width="wrap_content"
+            android:maxWidth="110dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Facundo  Trem."
+            android:textColor="@color/texto" />
+
+        <ImageView
+            android:id="@+id/man_user"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:layout_toStartOf="@+id/txName"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/man_user" />
+
+
+    </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:id="@+id/rlCalendario"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/my_awesome_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rd_calendario">
+
+        <org.lwr.edgarapp.view.TextViewRegular
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Calendario"
+            android:textColor="@color/fondo"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/calendar"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/calendar" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlChat"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/rlCalendario"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/rd_chat">
+
+        <org.lwr.edgarapp.view.TextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Chat"
+            android:textColor="@color/fondo"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/chat"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/chat" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlDocumentos"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/rlChat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/rd_documentos">
+
+        <org.lwr.edgarapp.view.TextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Documentos"
+            android:textColor="@color/fondo"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/writing"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/writing" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/footer" />
+
+</RelativeLayout>

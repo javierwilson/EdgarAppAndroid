@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo">
+
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/my_awesome_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar_color"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/MyActionBarTheme">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/edgar"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/edgar" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/my_awesome_toolbar"
+        android:weightSum="2">
+
+
+        <org.lwr.edgarapp.view.TextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="7sp"
+            android:gravity="center"
+            android:text="Ingreso con correo"
+            android:textColor="#000"
+            android:textSize="25sp" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/etPhoneayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlToolbar"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="30dp"
+            android:textColorHint="#000"
+            android:theme="@style/TextInputLayoutAppearance"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#000">
+
+            <org.lwr.edgarapp.view.EditTextRegular
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Teléfono"
+                android:inputType="phone"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#000" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/etPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlToolbar"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:theme="@style/TextInputLayoutAppearance"
+            android:layout_marginTop="15dp"
+            android:textColorHint="#000"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#000">
+
+            <org.lwr.edgarapp.view.EditTextRegular
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pasword"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#000" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <org.lwr.edgarapp.view.ButtonBold
+            android:id="@+id/rlIniciarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_above="@+id/txLine"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:text="Iniciar Sesión"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+        <org.lwr.edgarapp.view.TextViewRegular
+            android:id="@+id/txPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlFb"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text="Olvidaste tu contraseña?"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

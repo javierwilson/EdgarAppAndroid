@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#DAD1BD</color>
+    <color name="colorPrimaryDark">#c8bea0</color>
+    <color name="colorAccent">#000000</color>
+    <color name="toolbar_color">#d5ceba</color>
+    <color name="texto">#6d481d</color>
+    <color name="fondo">#e9e5d9</color>
+    <color name="calendario">#91232d</color>
+    <color name="chat">#634315</color>
+    <color name="documentos">#b39155</color>
+    <color name="rojo">#8F2932</color>
+    <color name="red_pink">#ed3a4f</color>
+    <color name="verde">#4F7E30</color>
+    <color name="face">#4b74ff</color>
+
+</resources>
