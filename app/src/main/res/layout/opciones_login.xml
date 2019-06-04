@@ -32,7 +32,7 @@
                 android:src="@drawable/edgar" />
 
 
-            <org.lwr.edgarapp.view.TextViewBold
+            <org.lwr.edgar.view.TextViewBold
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
@@ -57,70 +57,66 @@
             android:layout_weight="1">
 
 
-            <RelativeLayout
-                android:id="@+id/rlEmail"
+            <org.lwr.edgar.view.TextViewRegular
+                android:id="@+id/txTexto"
                 android:layout_width="match_parent"
-                android:layout_height="47dp"
-                android:layout_above="@+id/rlFb"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Puedes ingresar con"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+
+            <RelativeLayout
+                android:id="@+id/rlLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txTexto"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:background="@drawable/rounded_button">
+                android:layout_marginTop="15dp">
+
 
                 <ImageView
-                    android:id="@+id/email"
-                    android:layout_width="20dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="20dp"
+                    android:id="@+id/rlEmail"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toStartOf="@+id/rlFb"
                     android:adjustViewBounds="true"
-                    android:src="@drawable/email" />
+                    android:padding="4dp"
+                    android:src="@drawable/phone" />
 
-                <org.lwr.edgarapp.view.TextViewBold
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:gravity="center"
-                    android:text="Ingresar con correo"
-                    android:textColor="#ffffff"
-                    android:textSize="17sp" />
-
-
-            </RelativeLayout>
-
-
-            <RelativeLayout
-                android:id="@+id/rlFb"
-                android:layout_width="match_parent"
-                android:layout_height="47dp"
-                android:layout_above="@+id/txLine"
-                android:layout_centerHorizontal="true"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:background="@drawable/rounded_fb">
 
                 <ImageView
-                    android:id="@+id/facebook"
-                    android:layout_width="20dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="20dp"
+                    android:id="@+id/rlFb"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
                     android:adjustViewBounds="true"
+                    android:padding="4dp"
                     android:src="@drawable/facebook" />
 
-                <org.lwr.edgarapp.view.TextViewBold
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:gravity="center"
-                    android:text="Ingresar con Facebook"
-                    android:textColor="#ffffff"
-                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/rlGoogle"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toEndOf="@+id/rlFb"
+                    android:adjustViewBounds="true"
+                    android:padding="4dp"
+                    android:src="@drawable/google" />
 
 
             </RelativeLayout>
@@ -135,51 +131,16 @@
                 android:text="TextView" />
 
 
-            <RelativeLayout
-                android:id="@+id/rlGoogle"
-                android:layout_width="match_parent"
-                android:layout_height="47dp"
-                android:layout_below="@+id/txLine"
-                android:layout_centerHorizontal="true"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/rounded_button_g">
-
-                <ImageView
-                    android:id="@+id/google"
-                    android:layout_width="20dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="20dp"
-                    android:adjustViewBounds="true"
-                    android:src="@drawable/ico_google" />
-
-                <org.lwr.edgarapp.view.TextViewBold
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:gravity="center"
-                    android:text="Ingresar con Google"
-                    android:textColor="#000000"
-                    android:textSize="17sp" />
-
-
-            </RelativeLayout>
-
-
-            <org.lwr.edgarapp.view.TextViewRegular
+            <org.lwr.edgar.view.TextViewRegular
                 android:id="@+id/txRegistrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/rlGoogle"
+                android:layout_below="@+id/rlLogin"
                 android:layout_centerHorizontal="true"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="5dp"
-                android:gravity="right"
+                android:gravity="center"
                 android:padding="5dp"
                 android:text="No posees cuenta? Registrate Ahora"
                 android:textColor="#000000"
@@ -211,6 +172,17 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true" />
 
+
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:id="@+id/progress_bar_login"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
 
 
 </RelativeLayout>

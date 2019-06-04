@@ -1,27 +1,58 @@
 {
   "project_info": {
-    "project_number": "53119510335",
-    "firebase_url": "https://edgar-app-d681c.firebaseio.com",
-    "project_id": "edgar-app-d681c",
-    "storage_bucket": "edgar-app-d681c.appspot.com"
+    "project_number": "665341229911",
+    "firebase_url": "https://edgar-app-2524b.firebaseio.com",
+    "project_id": "edgar-app-2524b",
+    "storage_bucket": "edgar-app-2524b.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:53119510335:android:08d4e7253601257f",
+        "mobilesdk_app_id": "1:665341229911:android:3e71b3d9dc9e7ec7",
+        "android_client_info": {
+          "package_name": "org.lwr.edgar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "665341229911-fmnlgpaelqd3eh8lgm0pcf1m4j7su813.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiaSdzGEUY2ywrsDsdxOEWCbWKoZdNmTw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:665341229911:android:08d4e7253601257f",
         "android_client_info": {
           "package_name": "org.lwr.edgarapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "53119510335-tgfnnllo93opg2j30lvrauiop3hfvkpl.apps.googleusercontent.com",
+          "client_id": "665341229911-fmnlgpaelqd3eh8lgm0pcf1m4j7su813.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDJAexIdhlW_KnOmWMMgUooiJCyE7pY1Bs"
+          "current_key": "AIzaSyDiaSdzGEUY2ywrsDsdxOEWCbWKoZdNmTw"
         }
       ],
       "services": {

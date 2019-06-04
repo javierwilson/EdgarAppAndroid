@@ -40,11 +40,49 @@
     </android.support.v7.widget.Toolbar>
 
 
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/contYear"
+        android:layout_below="@+id/my_awesome_toolbar"
+        android:background="@drawable/rounded_button_menu">
+
+        <Spinner
+            android:id="@+id/spinnerYear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="11sp" />
+
+
+        <org.lwr.edgar.view.TextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="-"
+            android:id="@+id/txYear"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:clickable="true"
+            android:id="@+id/mostrarYear"
+            android:layout_height="fill_parent">
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerCalendario"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/my_awesome_toolbar"
+        android:layout_below="@+id/contYear"
         android:layout_marginTop="10dp"
         android:clipToPadding="false"
         android:descendantFocusability="blocksDescendants"

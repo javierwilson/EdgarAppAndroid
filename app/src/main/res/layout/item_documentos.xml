@@ -17,18 +17,33 @@
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="5dp"
         android:adjustViewBounds="true"
-        app:srcCompat="@drawable/file" />
+        android:src="@drawable/file" />
 
 
-    <org.lwr.edgarapp.view.TextViewRegular
+    <org.lwr.edgar.view.TextViewRegular
         android:id="@+id/txTitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
+        android:layout_marginRight="70dp"
         android:text="Productiva"
         android:textColor="@color/rojo" />
+
+
+    <ImageView
+        android:id="@+id/eye"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="35dp"
+        android:adjustViewBounds="true"
+        android:padding="4dp"
+        android:src="@drawable/eye_open"
+        android:visibility="gone" />
 
 
     <ImageView
@@ -38,7 +53,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginRight="5dp"
         android:adjustViewBounds="true"
-        app:srcCompat="@drawable/download" />
+        android:src="@drawable/download" />
 
 
 </RelativeLayout>

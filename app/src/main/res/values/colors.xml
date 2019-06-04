@@ -4,14 +4,51 @@
     <color name="colorPrimaryDark">#c8bea0</color>
     <color name="colorAccent">#000000</color>
     <color name="toolbar_color">#d5ceba</color>
-    <color name="texto">#6d481d</color>
+    <color name="texto">#6d481d</color>toolbar_color
     <color name="fondo">#e9e5d9</color>
     <color name="calendario">#91232d</color>
     <color name="chat">#634315</color>
     <color name="documentos">#b39155</color>
+    <color name="video">#40609c</color>
+    <color name="cancel">#666565</color>
+
     <color name="rojo">#8F2932</color>
     <color name="red_pink">#ed3a4f</color>
     <color name="verde">#4F7E30</color>
     <color name="face">#4b74ff</color>
+    <color name="colorWhite">#ffffff</color>
+
+    <!-- Open Chat -->
+    <color name="openChatText">#47505d</color>
+    <color name="openChatNicknameOther">#3a414d</color>
+    <color name="openChatNicknameMe">#00BCD4</color>
+
+    <!-- Selector -->
+    <color name="btn_create">#ffffff</color>
+    <color name="btn_create_disabled">#d5ceba</color>
+    <color name="btn_edit">#ffffff</color>
+    <color name="btn_edit_disabled">#d5ceba</color>
+    <color name="btn_send">#b39155</color>
+    <color name="btn_send_disabled">#8e8e8e</color>
+
+    <!-- Group Chat -->
+    <color name="groupChatBubbleMe">#6d481d</color>
+    <color name="groupChatTextMe">#ffffff</color>
+    <color name="groupChatBubbleOther">#eef1f6</color>
+    <color name="groupChatTextOther">#000000</color>
+
+    <color name="groupChatDateText">#ffffff</color>
+    <color name="groupChatDateBackground">#C0C0C0</color>
+
+    <!-- Group Channel List -->
+    <color name="groupChannelUnreadCountBackground">#6d481d</color>
+    <color name="groupChannelUnreadCountText">#ffffff</color>
+
+    <color name="groupChatAdminBackground">#6d481d</color>
+    <color name="groupChatAdminText">#ffffff</color>
+
+
+    <color name="groupChatReadReceiptMe">#6d481d</color>
+    <color name="groupChatReadReceiptOther">#6d481d</color>
 
 </resources>

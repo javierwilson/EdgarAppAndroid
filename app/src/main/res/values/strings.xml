@@ -1,6 +1,24 @@
 <resources>
     <string name="app_name">Edgar App</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
 
     <string name="facebook_app_id">258085584911167</string>
     <string name="fb_login_protocol_scheme">fb258085584911167</string>
+
+    <!-- Content descriptions -->
+    <string name="open_channel_chat_content_desc_profile">Profile image</string>
+    <string name="fcm_message">Edgar App</string>
+
+    <string name="download">Download</string>
+    <string name="cancel">Cancel</string>
+    <string name="upload">Upload</string>
+    <string name="resend_message">Resend</string>
+    <string name="delete_message">Delete</string>
+
+    <string name="group_channel_list_file_message_text">%1$s has uploaded a file.</string>
+
+
+    <!-- Message Status -->
+    <string name="message_sending">Enviando</string>
+    <string name="message_failed">Ha fallado</string>
 </resources>

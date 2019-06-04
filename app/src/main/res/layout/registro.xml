@@ -55,7 +55,7 @@
         android:orientation="vertical">
 
 
-            <org.lwr.edgarapp.view.TextViewBold
+            <org.lwr.edgar.view.TextViewBold
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -80,7 +80,7 @@
                 android:textColorHint="#000"
                 android:theme="@style/TextInputLayoutAppearance">
 
-                <org.lwr.edgarapp.view.EditTextRegular
+                <org.lwr.edgar.view.EditTextRegular
                     android:id="@+id/edNombre"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -94,32 +94,7 @@
             </android.support.design.widget.TextInputLayout>
 
 
-            <android.support.design.widget.TextInputLayout
-                android:id="@+id/etPhoneLayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/rlToolbar"
-                android:layout_marginBottom="0dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="10dp"
-                android:textColorHint="#000"
-                android:theme="@style/TextInputLayoutAppearance"
-                app:passwordToggleEnabled="true"
-                app:passwordToggleTint="#000">
 
-                <org.lwr.edgarapp.view.EditTextRegular
-                    android:id="@+id/etPhone"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Teléfono"
-                    android:inputType="text|phone"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:textColor="#000"
-                    android:textSize="14sp" />
-
-            </android.support.design.widget.TextInputLayout>
 
 
             <android.support.design.widget.TextInputLayout
@@ -136,7 +111,7 @@
                 app:passwordToggleEnabled="true"
                 app:passwordToggleTint="#000">
 
-                <org.lwr.edgarapp.view.EditTextRegular
+                <org.lwr.edgar.view.EditTextRegular
                     android:id="@+id/etPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -155,7 +130,148 @@
             </android.support.design.widget.TextInputLayout>
 
 
-            <org.lwr.edgarapp.view.TextViewRegular
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/etPasswordLayoutConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlToolbar"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#000"
+                android:theme="@style/TextInputLayoutAppearance"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#000">
+
+                <org.lwr.edgar.view.EditTextRegular
+                    android:id="@+id/etPasswordConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Confirmar Password"
+                    android:inputType="textPassword"
+                    android:isScrollContainer="true"
+                    android:overScrollMode="always"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:scrollbarStyle="insideInset"
+
+                    android:scrollbars="vertical"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/etEmailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlToolbar"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#000"
+                android:theme="@style/TextInputLayoutAppearance"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#000">
+
+                <org.lwr.edgar.view.EditTextRegular
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Correo"
+                    android:inputType="textEmailAddress"
+                    android:isScrollContainer="true"
+                    android:overScrollMode="always"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:scrollbarStyle="insideInset"
+
+                    android:scrollbars="vertical"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <org.lwr.edgar.view.TextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="7dp"
+                android:lineSpacingExtra="7sp"
+                android:text="País"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_button_menu">
+
+                <Spinner
+                    android:id="@+id/spinnerCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="11sp" />
+
+
+                <org.lwr.edgar.view.TextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="País"
+                    android:id="@+id/txPais"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:clickable="true"
+                    android:id="@+id/mostrarPaices"
+                    android:layout_height="fill_parent">
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/etPhoneLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlToolbar"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#000"
+                android:theme="@style/TextInputLayoutAppearance"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#000">
+
+                <org.lwr.edgar.view.EditTextRegular
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Teléfono"
+                    android:inputType="phone"
+                    android:paddingLeft="10dp"
+                    android:digits="0123456789"
+                    android:paddingRight="10dp"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <org.lwr.edgar.view.TextViewRegular
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -174,17 +290,17 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_gravity="center"
-                android:checkedButton="@+id/sound"
+                android:checkedButton="@+id/radioGeneroM"
                 android:orientation="horizontal">
 
-                <org.lwr.edgarapp.view.RadiuButtonRegular
-                    android:id="@+id/sound"
+                <org.lwr.edgar.view.RadiuButtonRegular
+                    android:id="@+id/radioGeneroM"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Masculino" />
 
-                <org.lwr.edgarapp.view.RadiuButtonRegular
-                    android:id="@+id/vibration"
+                <org.lwr.edgar.view.RadiuButtonRegular
+                    android:id="@+id/radioGeneroF"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Femenino" />
@@ -192,37 +308,11 @@
 
             </RadioGroup>
 
-            <org.lwr.edgarapp.view.TextViewRegular
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="7dp"
-                android:lineSpacingExtra="7sp"
-                android:text="País"
-                android:textColor="@android:color/black"
-                android:textSize="14sp" />
-
-
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="40dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/rounded_button_menu">
-
-                <Spinner
-                    android:id="@+id/spinnerCountry"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textSize="11sp"/>
-
-            </LinearLayout>
 
 
 
-            <org.lwr.edgarapp.view.TextViewRegular
+
+            <org.lwr.edgar.view.TextViewRegular
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -234,13 +324,13 @@
                 android:textSize="14sp" />
 
 
-            <org.lwr.edgarapp.view.EditTextRegular
+            <org.lwr.edgar.view.EditTextRegular
                 android:id="@+id/etFecha"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
                 android:layout_marginTop="6dp"
+                android:layout_marginRight="16dp"
                 android:focusable="false"
                 android:focusableInTouchMode="false"
                 android:hint="Fecha Nacimiento"
@@ -262,7 +352,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="10dp">
 
-                <org.lwr.edgarapp.view.ButtonRegular
+                <org.lwr.edgar.view.ButtonRegular
                     android:id="@+id/btRegistrar"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -284,5 +374,17 @@
     </LinearLayout>
 
     </ScrollView>
+
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:id="@+id/progress_bar_login"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
+
 
 </RelativeLayout>

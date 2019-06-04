@@ -3,11 +3,11 @@
 <item>
     <shape android:shape="rectangle">
         <!-- solid background -->
-        <solid android:color="@color/fondo"/>
+        <solid android:color="@color/btn_create"/>
         <!-- draw a border around rectangle shape -->
         <stroke
             android:color="#9a824b"
-            android:width="2dp"
+            android:width="0dp"
             />
         <!-- draw 35 dp radius for each corner -->
         <corners android:radius="5dp"/>

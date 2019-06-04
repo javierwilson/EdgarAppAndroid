@@ -48,7 +48,7 @@
         android:weightSum="2">
 
 
-        <org.lwr.edgarapp.view.TextViewBold
+        <org.lwr.edgar.view.TextViewBold
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
@@ -56,7 +56,7 @@
             android:layout_marginTop="20dp"
             android:lineSpacingExtra="7sp"
             android:gravity="center"
-            android:text="Ingreso con correo"
+            android:text="Ingreso con Teléfono"
             android:textColor="#000"
             android:textSize="25sp" />
 
@@ -75,13 +75,14 @@
             app:passwordToggleEnabled="true"
             app:passwordToggleTint="#000">
 
-            <org.lwr.edgarapp.view.EditTextRegular
+            <org.lwr.edgar.view.EditTextRegular
                 android:id="@+id/etPhone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Teléfono"
                 android:inputType="phone"
                 android:paddingLeft="10dp"
+                android:digits="0123456789"
                 android:paddingRight="10dp"
                 android:textColor="#000" />
 
@@ -102,11 +103,11 @@
             app:passwordToggleEnabled="true"
             app:passwordToggleTint="#000">
 
-            <org.lwr.edgarapp.view.EditTextRegular
+            <org.lwr.edgar.view.EditTextRegular
                 android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Pasword"
+                android:hint="Password"
                 android:inputType="textPassword"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
@@ -115,7 +116,7 @@
         </android.support.design.widget.TextInputLayout>
 
 
-        <org.lwr.edgarapp.view.ButtonBold
+        <org.lwr.edgar.view.ButtonBold
             android:id="@+id/rlIniciarSesion"
             android:layout_width="match_parent"
             android:layout_height="47dp"
@@ -131,7 +132,7 @@
             android:textColor="#ffffff"
             android:textSize="17sp" />
 
-        <org.lwr.edgarapp.view.TextViewRegular
+        <org.lwr.edgar.view.TextViewRegular
             android:id="@+id/txPass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -140,16 +141,26 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="15dp"
             android:layout_marginTop="5dp"
-            android:gravity="left"
+            android:gravity="right"
             android:padding="5dp"
-            android:text="Olvidaste tu contraseña?"
+            android:text="¿Olvidaste tu contraseña?"
             android:textColor="#000"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            />
 
 
 
     </LinearLayout>
 
 
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:id="@+id/progress_bar_login"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
 
 </RelativeLayout>

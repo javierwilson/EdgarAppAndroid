@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     android:background="@color/fondo">
 
+    <ImageView
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/footer" />
+
     <android.support.v7.widget.Toolbar
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/my_awesome_toolbar"
@@ -30,7 +40,7 @@
             android:adjustViewBounds="true"
             app:srcCompat="@drawable/edgar" />
 
-        <org.lwr.edgarapp.view.TextViewRegular
+        <org.lwr.edgar.view.TextViewRegular
             android:id="@+id/txName"
             android:layout_width="wrap_content"
             android:maxWidth="110dp"
@@ -59,14 +69,24 @@
 
     <RelativeLayout
         android:id="@+id/rlCalendario"
-        android:layout_width="250dp"
+        android:layout_width="270dp"
         android:layout_height="60dp"
         android:layout_below="@+id/my_awesome_toolbar"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:background="@drawable/rd_calendario">
 
-        <org.lwr.edgarapp.view.TextViewRegular
+
+        <com.andexert.library.RippleView
+            android:id="@+id/rpCalendario"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            rv_centered="true">
+
+
+        </com.andexert.library.RippleView>
+
+        <org.lwr.edgar.view.TextViewRegular
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -88,23 +108,34 @@
     </RelativeLayout>
 
 
+
+
     <RelativeLayout
         android:id="@+id/rlChat"
-        android:layout_width="250dp"
+        android:layout_width="270dp"
         android:layout_height="60dp"
         android:layout_below="@+id/rlCalendario"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/rd_chat">
 
-        <org.lwr.edgarapp.view.TextViewRegular
+        <com.andexert.library.RippleView
+            android:id="@+id/rpChat"
+            rv_centered="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </com.andexert.library.RippleView>
+
+        <org.lwr.edgar.view.TextViewRegular
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:text="Chat"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Conversando\ncon Edgar"
             android:textColor="@color/fondo"
-            android:textSize="18sp" />
+            android:textSize="17sp" />
 
         <ImageView
             android:id="@+id/chat"
@@ -118,16 +149,80 @@
     </RelativeLayout>
 
 
+    <org.lwr.edgar.view.CircularTextView
+        android:id="@+id/circularTextView"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_above="@+id/rlChat"
+        android:layout_alignEnd="@+id/rlChat"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-43dp"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text=""
+        android:textColor="#fff"
+        android:visibility="visible" />
+
+
     <RelativeLayout
-        android:id="@+id/rlDocumentos"
-        android:layout_width="250dp"
+        android:id="@+id/rlVideoTutoriales"
+        android:layout_width="270dp"
         android:layout_height="60dp"
         android:layout_below="@+id/rlChat"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rd_video">
+
+
+        <com.andexert.library.RippleView
+            android:layout_width="match_parent"
+            android:id="@+id/rpVideoTutoriales"
+            android:layout_height="match_parent"
+            rv_centered="true">
+
+
+        </com.andexert.library.RippleView>
+
+        <org.lwr.edgar.view.TextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Video Tutoriales"
+            android:textColor="@color/fondo"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/video_tutoriales"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/video_tutoriales" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlDocumentos"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:layout_below="@+id/rlVideoTutoriales"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
         android:background="@drawable/rd_documentos">
 
-        <org.lwr.edgarapp.view.TextViewRegular
+        <com.andexert.library.RippleView
+            android:id="@+id/rpDocumentos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            rv_centered="true">
+
+
+        </com.andexert.library.RippleView>
+
+        <org.lwr.edgar.view.TextViewRegular
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -148,14 +243,6 @@
     </RelativeLayout>
 
 
-    <ImageView
-        android:id="@+id/footer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:adjustViewBounds="true"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/footer" />
+
 
 </RelativeLayout>
